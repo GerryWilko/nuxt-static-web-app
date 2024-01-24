@@ -18,6 +18,8 @@ jobs:
         run: pnpm i
       - name: build
         run: pnpm build
+        env:
+          NITRO_PRESET: azure
       - name: swa fix
         run: touch index.html
       - name: Build And Deploy
