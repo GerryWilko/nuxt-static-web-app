@@ -30,7 +30,7 @@ jobs:
       - name: 🪜 cache dists
         uses: actions/upload-artifact@v3
         with:
-          retention-days: 1
-          name: dist
+          name: 
           path: |
             .output
+            staticwebapp.config.json
